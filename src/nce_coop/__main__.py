@@ -50,7 +50,7 @@ def main(argv: list[str] | None = None) -> int:
         status = None if args.status == "all" else args.status
         listed = [r for r in records.values() if status is None or r["status"] == status]
         if not listed:
-            print(f"no postings with status={args.status!r} — try `ingest` or `--status all`")
+            print(f"no postings with status={args.status!r}, try `ingest` or `--status all`")
         for r in sorted(listed, key=lambda r: r.get("posted_at", ""), reverse=True):
             _print_row(r)
         return 0
@@ -78,7 +78,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.cmd == "export":
-        print("export: not yet implemented — Bus Dev sheet columns unknown, see docs/questions.md")
+        print("export: not yet implemented, Bus Dev sheet columns unknown, see docs/questions.md")
         return 1
     return 1
 

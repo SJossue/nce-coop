@@ -7,7 +7,7 @@ so only co-op-approved students can apply, when:
     AND the posting is engineering-only.
 
 This is the one piece of the whole process that's fully specified independent of what
-Handshake data actually looks like once ingestion exists — see docs/process.md and
+Handshake data actually looks like once ingestion exists; see docs/process.md and
 docs/questions.md for what's still unresolved.
 """
 

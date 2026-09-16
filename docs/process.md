@@ -2,13 +2,13 @@
 
 Transcribed from Nayelli Perez's onboarding email, 2026-09-16 ("Program Assistant -
 Undergraduate Engineering Co-op onboarding and first tasks"). This is her own workflow,
-documented here as the spec `src/nce_coop/` should eventually encode — not yet automated
-end-to-end, see `roadmap.md`.
+documented here as the spec `src/nce_coop/` should eventually encode. It isn't automated
+end-to-end yet; see `roadmap.md`.
 
-## Day 1–3 onboarding tasks
+## Day 1-3 onboarding tasks
 1. Review onboarding materials (job description PDF, 2 historical/engagement slides, NCE Co-op
-   strategic plan doc — see `contacts.md` for the link).
-2. Get acquainted with the NCE Bus Dev Google Sheet — its fields/tabs. **Still pending** — the
+   strategic plan doc, see `contacts.md` for the link).
+2. Get acquainted with the NCE Bus Dev Google Sheet: its fields/tabs. **Still pending.** The
    actual column schema this tooling's `export` command should target is unknown until this
    happens.
 3. Get Handshake permissions via Koustubh, matching Mitchell's access. **Still pending.**
@@ -17,12 +17,13 @@ end-to-end, see `roadmap.md`.
 6. Explicit ask from Nayelli: figure out how to automate generating the list of new NCE Co-op /
    FT Internship postings from Handshake and other sources. This repo is that effort.
 
-## "MONITOR ENG CO-OP AND INTERNSHIP FULL TIME JOBS" — Nayelli's process
-- **Search terms:** co-op, coop, co op, fall, sept, spring, jan, feb, winter — plus checking
+## "MONITOR ENG CO-OP AND INTERNSHIP FULL TIME JOBS": Nayelli's process
+- **Search terms:** co-op, coop, co op, fall, sept, spring, jan, feb, winter, plus checking
   local postings.
 - **Filtered Handshake URL:** job type = Cooperative Education + Internship, employment type =
   Full-Time, filtered to a specific list of major codes. The URL pasted in the original email
-  had corrupted query-param encoding — need a clean working link once Handshake access exists.
+  had corrupted query-param encoding; a clean working link is needed once Handshake access
+  exists.
 - **Pending postings:** check them; put relevant ones in the Bus Dev sheet tab; note when they
   become approved.
 - **New postings:** check what was posted yesterday and today; add to the sheet.
@@ -31,13 +32,13 @@ end-to-end, see `roadmap.md`.
   - job type is Cooperative Education (if engineering-only), **or**
   - job type is Full-Time Internship **and** the title says "co-op" **and** it's
     engineering-only.
-  (This is `src/nce_coop/rules.py` — the one part of this process that's fully specified and
-  already implemented + tested.)
+  (This is `src/nce_coop/rules.py`, the one part of this process that's fully specified and
+  already implemented and tested.)
 - **Expired postings:** find which jobs expired yesterday; move those to a follow-up tab; note
-  any with the co-op-eligible label; check for an H4 label (meaning still unclear — see
+  any with the co-op-eligible label; check for an H4 label (meaning still unclear, see
   `questions.md`); look up co-op eligibility for the rest.
 - **Bus Dev doc/file revamp:** cross-reference Nayelli's summer outreach list + Zac's outreach
-  list against Handshake's employer section — the "expressed interest in your school" homepage
+  list against Handshake's employer section: the "expressed interest in your school" homepage
   view, and the all-employers tab with filters.
 - **Ongoing:** monitor labor-market news and outside postings for timely employer outreach.
 - **Job search alerts:** set up alerts for eng co-op roles as part of the Bus Dev revamp.
@@ -46,4 +47,4 @@ end-to-end, see `roadmap.md`.
   Cooperative Education job type, "co-op" in title).
 
 ## Last known state (as of the onboarding email)
-Nayelli last checked 9/4–9/12. Jossue picks up from there once he has access.
+Nayelli last checked 9/4-9/12. Jossue picks up from there once he has access.

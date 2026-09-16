@@ -1,7 +1,7 @@
 """State for the NCE co-op posting monitor: data/postings.json.
 
 One record per posting ever seen, keyed by a Handshake posting id (or a derived id if
-Handshake's export doesn't expose one directly — see docs/questions.md). The file is meant to
+Handshake's export doesn't expose one directly, see docs/questions.md). The file is meant to
 be committed so the seen-set rides git history, same convention as pancake's
 agent/jobs/store.py.
 
@@ -73,5 +73,5 @@ def find(records: dict, posting_id: str) -> dict:
     if len(hits) == 1:
         return records[hits[0]]
     if not hits:
-        raise KeyError(f"no posting matches {posting_id!r} — run `ingest`, check `list`")
+        raise KeyError(f"no posting matches {posting_id!r}: run `ingest`, check `list`")
     raise KeyError(f"{posting_id!r} is ambiguous ({len(hits)} matches): " + ", ".join(sorted(hits)[:5]))

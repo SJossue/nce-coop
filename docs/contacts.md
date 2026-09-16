@@ -2,7 +2,7 @@
 
 | Who | Role |
 |---|---|
-| Nayelli Perez (nayelli.perez@njit.edu) | Director, Undergraduate Engineering Co-op — manager |
+| Nayelli Perez (nayelli.perez@njit.edu) | Director, Undergraduate Engineering Co-op (manager) |
 | Koustubh | Grants Handshake permissions |
 | Mitchell | Existing team member; Jossue's permissions should match his |
 | Zac | Maintains a separate employer outreach list that feeds the Bus Dev sheet revamp |
